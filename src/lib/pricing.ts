@@ -1,18 +1,17 @@
-// TODO: Replace placeholder pricing with actual rates from business owner
-
 export const PRICING = {
-  // Dog Walking
   dog_walking: {
     label: "Dog Walking",
     description: "Daily walks tailored to your dog's energy level",
-    rates: {
-      per_walk_30: 25,   // TODO: 30-minute walk rate
-      per_walk_60: 40,   // TODO: 60-minute walk rate
+    additional_dog: 10, // per walk, per additional dog
+    individual: {
+      "30_min": { duration: "30-Minute Walk", price: 35 },
+      "60_min": { duration: "60-Minute Walk", price: 55 },
     },
     packages: {
-      "5_walks": { walks: 5, price: 110, savings: 15 },   // TODO
-      "10_walks": { walks: 10, price: 210, savings: 40 },  // TODO
-      "20_walks": { walks: 20, price: 400, savings: 100 }, // TODO
+      "30_min_5": { duration: "30-Minute", walks: 5, price: 150, fullPrice: 175, savings: 25 },
+      "30_min_20": { duration: "30-Minute", walks: 20, price: 600, fullPrice: 700, savings: 100 },
+      "60_min_5": { duration: "60-Minute", walks: 5, price: 250, fullPrice: 275, savings: 25 },
+      "60_min_20": { duration: "60-Minute", walks: 20, price: 1000, fullPrice: 1100, savings: 100 },
     },
   },
 
@@ -21,13 +20,13 @@ export const PRICING = {
     label: "Pet Sitting",
     description: "In-home visits to care for your pets while you're away",
     rates: {
-      per_visit: 35,     // TODO: Per visit rate (30-min visit)
-      per_day: 75,       // TODO: Full day rate
-      overnight: 95,     // TODO: Overnight rate
+      per_visit: 35,
+      per_day: 75,
+      overnight: 95,
     },
     packages: {
-      "5_days": { days: 5, price: 340, savings: 35 },    // TODO
-      "10_days": { days: 10, price: 650, savings: 100 },  // TODO
+      "5_days": { days: 5, price: 340, savings: 35 },
+      "10_days": { days: 10, price: 650, savings: 100 },
     },
   },
 
@@ -36,18 +35,18 @@ export const PRICING = {
     label: "Drop-In Visit",
     description: "Quick check-ins for feeding, potty breaks, and love",
     rates: {
-      per_visit: 20,  // TODO: 15-20 minute drop-in rate
+      per_visit: 20,
     },
   },
 
   // Registration fee (one-time, charged with first booking)
-  registration_fee: 25, // TODO: One-time registration/meet-and-greet fee
+  registration_fee: 25,
 
   // Monthly subscription estimates (for recurring clients)
   monthly: {
-    dog_walking_3x: 300,  // TODO: 3x/week dog walking monthly
-    dog_walking_5x: 475,  // TODO: 5x/week dog walking monthly
-    pet_sitting_daily: 600, // TODO: Daily pet sitting monthly
+    dog_walking_3x: 300,
+    dog_walking_5x: 475,
+    pet_sitting_daily: 600,
   },
 } as const;
 
@@ -59,7 +58,7 @@ export function calculateMonthlyRate(
 ): number {
   switch (careType) {
     case "dog_walking":
-      return PRICING.dog_walking.rates.per_walk_30 * daysPerWeek * 4;
+      return PRICING.dog_walking.individual["30_min"].price * daysPerWeek * 4;
     case "pet_sitting":
       return PRICING.pet_sitting.rates.per_visit * daysPerWeek * 4;
     case "drop_in":

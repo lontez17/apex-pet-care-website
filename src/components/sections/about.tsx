@@ -2,7 +2,7 @@ import { Shield, Award, Clock, Users } from "lucide-react";
 
 const STATS = [
   { icon: Shield, label: "Insured & Bonded", value: "Fully" },
-  { icon: Award, label: "Years Experience", value: "5+" },
+  { icon: Award, label: "Years Experience", value: "10+" },
   { icon: Clock, label: "Availability", value: "7 Days" },
   { icon: Users, label: "Happy Clients", value: "500+" },
 ];
@@ -18,12 +18,12 @@ export function About() {
               className="aspect-[4/3] rounded-3xl bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://images.unsplash.com/photo-1601758174493-b8236e67c3b4?w=800&h=600&fit=crop)",
+                  "url(/images/two-dogs-trail.jpeg)",
               }}
             />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-forest-green flex items-center justify-center text-off-white">
               <div className="text-center">
-                <p className="font-heading text-3xl font-bold">5+</p>
+                <p className="font-heading text-3xl font-bold">10+</p>
                 <p className="text-xs">Years of Love</p>
               </div>
             </div>

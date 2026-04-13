@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* === Color Palette (from site audit) === */
-  --color-dark-olive: #35392D;
-  --color-sage-green: #B0C997;
-  --color-light-sage: #D6E9B9;
-  --color-warm-cream: #FAF7D6;
-  --color-gold: #EDE0B6;
-  --color-off-white: #FDFBF7;
-  --color-muted-olive: #6F7660;
-  --color-forest-green: #3BA03B;
-  --color-dark-charcoal: #1B1B1B;
-  --color-border-gray: #C5C1B9;
+  /* === Color Palette (matched to logo) === */
+  --color-dark-olive: #2D3250;       /* slate navy — primary text */
+  --color-sage-green: #A8B4D4;       /* periwinkle muted — soft accent */
+  --color-light-sage: #E8ECF4;       /* light periwinkle — nav/section bg */
+  --color-warm-cream: #FFF1E8;       /* warm cream — exact logo background */
+  --color-gold: #E8C4C0;             /* blush pink — warm accent */
+  --color-off-white: #FDFAF7;        /* soft cream-white — card bg */
+  --color-muted-olive: #6B7194;      /* muted slate — secondary text */
+  --color-forest-green: #4A5B8C;     /* periwinkle navy — primary CTA */
+  --color-dark-charcoal: #1E2240;    /* deep navy — footer bg */
+  --color-border-gray: #D1CBBD;      /* warm gray — borders */
 
   /* === Font families === */
   --font-heading: var(--font-fredoka);
@@ -53,6 +53,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* === Service select glow === */
+@keyframes serviceGlow {
+  0%   { box-shadow: 0 0 8px rgba(245, 189, 0, 0.3), 0 0 20px rgba(245, 189, 0, 0.1); }
+  50%  { box-shadow: 0 0 20px rgba(245, 189, 0, 0.5), 0 0 40px rgba(245, 189, 0, 0.2); }
+  100% { box-shadow: 0 0 8px rgba(245, 189, 0, 0.3), 0 0 20px rgba(245, 189, 0, 0.1); }
+}
+
+.service-glow {
+  animation: serviceGlow 1.2s ease-in-out 3;
+}
+
+/* === Trust badge shimmer === */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.badge-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 4s ease-in-out infinite;
 }
 
 /* === Button hover scale === */

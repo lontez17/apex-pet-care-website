@@ -28,14 +28,20 @@ export function Hero() {
       </div>
 
       {/* Hero content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
-        <div className="flex justify-center gap-2 mb-4">
-          <Star className="h-5 w-5 text-gold fill-gold" />
-          <Star className="h-5 w-5 text-gold fill-gold" />
-          <Star className="h-5 w-5 text-gold fill-gold" />
-          <Star className="h-5 w-5 text-gold fill-gold" />
-          <Star className="h-5 w-5 text-gold fill-gold" />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-8 md:pt-4 md:pb-10 text-center">
+        <div className="flex items-center justify-center gap-2 mb-4">
+          <div className="flex gap-0.5 drop-shadow-[0_0_8px_rgba(245,189,0,0.5)]">
+            <Star className="h-6 w-6 text-amber-400 fill-amber-400" />
+            <Star className="h-6 w-6 text-amber-400 fill-amber-400" />
+            <Star className="h-6 w-6 text-amber-400 fill-amber-400" />
+            <Star className="h-6 w-6 text-amber-400 fill-amber-400" />
+            <Star className="h-6 w-6 text-amber-400 fill-amber-400" />
+          </div>
+          <span className="font-heading text-lg font-bold text-amber-500">5.0</span>
+          <span className="w-1 h-1 rounded-full bg-border-gray" />
+          <span className="text-sm font-medium text-muted-olive">Founded in 2021</span>
         </div>
+
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-dark-olive leading-tight">
           Your Pets Deserve
           <br />
@@ -47,13 +53,13 @@ export function Hero() {
           your neighborhood.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Link
-            href="/get-quote"
+          <a
+            href="#select-service"
             className="btn-hover inline-flex items-center justify-center gap-2 bg-forest-green text-off-white px-8 py-3.5 rounded-full text-base font-semibold"
           >
             <PawPrint className="h-5 w-5" />
             Get a Free Quote
-          </Link>
+          </a>
           <Link
             href="/#services"
             className="btn-hover inline-flex items-center justify-center gap-2 bg-sage-green/20 text-dark-olive px-8 py-3.5 rounded-full text-base font-semibold border border-sage-green"
@@ -67,14 +73,25 @@ export function Hero() {
   );
 }
 
-// Placeholder images — replace with actual pet photos
 const HERO_IMAGES = [
-  { src: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop", alt: "Happy dog on a walk" },
-  { src: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop", alt: "Two dogs playing" },
-  { src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop", alt: "Cat being pet" },
-  { src: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=300&fit=crop", alt: "Dog with owner" },
-  { src: "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400&h=300&fit=crop", alt: "Puppy portrait" },
-  { src: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop", alt: "Cute cat" },
-  { src: "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=400&h=300&fit=crop", alt: "Dog running in park" },
-  { src: "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=300&fit=crop", alt: "Dog and human bonding" },
+  { src: "/images/steph-hugging-dog.jpeg", alt: "Stephanie hugging a dog" },
+  { src: "/images/white-poodle-walk.jpeg", alt: "White poodle on a walk" },
+  { src: "/images/two-dogs-trail.jpeg", alt: "Two dogs on a scenic trail" },
+  { src: "/images/blue-eyed-cat-bed.jpeg", alt: "Blue-eyed cat in bed" },
+  { src: "/images/cavaliers-in-car.jpeg", alt: "Two Cavalier King Charles in a car" },
+  { src: "/images/happy-pitbull.jpeg", alt: "Happy pitbull smiling" },
+  { src: "/images/german-shepherd-smile.jpeg", alt: "German Shepherd smiling on trail" },
+  { src: "/images/steph-frenchie-couch.jpeg", alt: "Stephanie with French Bulldog on couch" },
+  { src: "/images/three-dogs-walk.jpeg", alt: "Three dogs on a group walk" },
+  { src: "/images/orange-tabby-cat.jpeg", alt: "Orange tabby cat" },
+  { src: "/images/shepherd-puppy-turf.jpeg", alt: "Shepherd puppy on turf" },
+  { src: "/images/yellow-lab-walk.jpeg", alt: "Yellow Lab on a walk" },
+  { src: "/images/steph-kissing-dog.jpeg", alt: "Stephanie kissing a dog" },
+  { src: "/images/cozy-dog-blanket.jpeg", alt: "Cozy dog in a blanket" },
+  { src: "/images/dogs-daycare-group.jpeg", alt: "Group of dogs at daycare" },
+  { src: "/images/corgi-looking-up.jpeg", alt: "Corgi looking up" },
+  { src: "/images/four-dogs-group-walk.jpeg", alt: "Four dogs on a group walk" },
+  { src: "/images/husky-park-resting.jpeg", alt: "Husky resting at park" },
+  { src: "/images/steph-bulldog-selfie.jpeg", alt: "Stephanie with Bulldog" },
+  { src: "/images/shiba-inu-indoors.jpeg", alt: "Shiba Inu sitting indoors" },
 ];

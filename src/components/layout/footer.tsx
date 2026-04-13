@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { PawPrint, Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,11 +9,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <PawPrint className="h-7 w-7" />
-              <span className="font-heading text-xl font-bold">
-                Apex Pet Care
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="Apex Pet Care"
+                width={160}
+                height={55}
+                className="h-14 w-auto object-contain rounded-lg"
+              />
             </div>
             <p className="text-off-white/80 text-sm leading-relaxed mb-4">
               Professional pet sitting and dog walking services. Your pets
@@ -53,13 +57,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                {/* TODO: Update with actual phone */}
-                <p>(555) 123-4567</p>
+                <a href="tel:+17636563042" className="hover:text-off-white transition-colors">(763) 656-3042</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
-                {/* TODO: Update with actual email */}
-                <p>hello@apexpetcare.com</p>
+                <a href="mailto:swinter@apexpetcarellc.com" className="hover:text-off-white transition-colors">swinter@apexpetcarellc.com</a>
               </div>
             </div>
           </div>

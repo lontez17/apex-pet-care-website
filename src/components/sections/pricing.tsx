@@ -9,17 +9,23 @@ interface PriceCardProps {
   description: string;
   features: string[];
   highlighted?: boolean;
+  badge?: string;
 }
 
-function PriceCard({ title, price, period, description, features, highlighted }: PriceCardProps) {
+function PriceCard({ title, price, period, description, features, highlighted, badge }: PriceCardProps) {
   return (
     <div
-      className={`card p-6 flex flex-col ${
+      className={`card p-6 flex flex-col relative ${
         highlighted
           ? "bg-forest-green text-off-white ring-2 ring-forest-green"
           : "bg-off-white text-dark-olive"
       }`}
     >
+      {badge && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-dark-olive text-xs font-bold px-3 py-1 rounded-full">
+          {badge}
+        </span>
+      )}
       <h3 className="font-heading text-xl font-bold mb-1">{title}</h3>
       <p className={`text-sm mb-4 ${highlighted ? "text-off-white/70" : "text-muted-olive"}`}>
         {description}
@@ -65,84 +71,156 @@ export function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="mt-3 text-muted-olive max-w-2xl mx-auto">
-            Choose the plan that fits your schedule. Package discounts available
-            for regular clients.
+            Choose the plan that fits your schedule. Save with walk packs for
+            regular clients.
           </p>
         </div>
 
-        {/* Individual Rates */}
-        <h3 className="font-heading text-xl font-bold text-dark-olive mb-4">
-          Individual Rates
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <PriceCard
-            title="Dog Walking"
-            price={`$${PRICING.dog_walking.rates.per_walk_30}`}
-            period="/walk (30 min)"
-            description="Daily walks for your pup"
-            features={[
-              "30-minute guided walk",
-              "GPS-tracked route",
-              "Photo updates after each walk",
-              `60-min option: $${PRICING.dog_walking.rates.per_walk_60}/walk`,
-            ]}
-          />
-          <PriceCard
-            title="Pet Sitting"
-            price={`$${PRICING.pet_sitting.rates.per_visit}`}
-            period="/visit"
-            description="In-home care visits"
-            features={[
-              "30-minute in-home visit",
-              "Feeding & medication",
-              "Play time & companionship",
-              `Overnight: $${PRICING.pet_sitting.rates.overnight}/night`,
-            ]}
-            highlighted
-          />
-          <PriceCard
-            title="Drop-In Visit"
-            price={`$${PRICING.drop_in.rates.per_visit}`}
-            period="/visit"
-            description="Quick check-ins"
-            features={[
-              "15-20 minute visit",
-              "Potty break & feeding",
-              "Quick love & attention",
-              "Perfect for midday breaks",
-            ]}
-          />
+        {/* ── Individual Walks ── */}
+        <div className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <h3 className="font-heading text-xl font-bold text-dark-olive">
+              Individual Walks
+            </h3>
+            <span className="text-xs font-medium text-muted-olive bg-sage-green/15 px-3 py-1 rounded-full">
+              Per Walk
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <PriceCard
+              title="30-Minute Walk"
+              price={`$${PRICING.dog_walking.individual["30_min"].price}`}
+              period="/walk"
+              description="Great for potty breaks & moderate exercise"
+              features={[
+                "30-minute guided walk",
+                "Photo updates",
+                "Post-walk report",
+                `+$${PRICING.dog_walking.additional_dog} per additional dog`,
+              ]}
+            />
+            <PriceCard
+              title="60-Minute Walk"
+              price={`$${PRICING.dog_walking.individual["60_min"].price}`}
+              period="/walk"
+              description="Extended adventure for active dogs"
+              features={[
+                "60-minute guided walk",
+                "Photo & video updates",
+                "Post-walk report",
+                `+$${PRICING.dog_walking.additional_dog} per additional dog`,
+              ]}
+              highlighted
+            />
+            <PriceCard
+              title="Pet Sitting"
+              price={`$${PRICING.pet_sitting.rates.per_visit}`}
+              period="/visit"
+              description="In-home care visits"
+              features={[
+                "30-minute in-home visit",
+                "Feeding & medication",
+                "Play time & companionship",
+                `Overnight: $${PRICING.pet_sitting.rates.overnight}/night`,
+              ]}
+            />
+            <PriceCard
+              title="Drop-In Visit"
+              price={`$${PRICING.drop_in.rates.per_visit}`}
+              period="/visit"
+              description="Quick check-ins"
+              features={[
+                "15-20 minute visit",
+                "Potty break & feeding",
+                "Quick love & attention",
+                "Perfect for midday breaks",
+              ]}
+            />
+          </div>
         </div>
 
-        {/* Packages */}
-        <h3 className="font-heading text-xl font-bold text-dark-olive mb-4">
-          Walk Packages
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {Object.entries(PRICING.dog_walking.packages).map(([key, pkg]) => (
-            <div key={key} className="card bg-off-white p-6 text-center">
-              <h4 className="font-heading text-lg font-bold text-dark-olive">
-                {pkg.walks} Walks
-              </h4>
-              <p className="font-heading text-2xl font-bold text-dark-olive mt-2">
-                ${pkg.price}
-              </p>
-              <p className="text-sm text-forest-green font-medium mt-1">
-                Save ${pkg.savings}
-              </p>
-              <Link
-                href="/get-quote"
-                className="btn-hover mt-4 inline-block bg-sage-green text-off-white px-6 py-2 rounded-full text-sm font-semibold"
-              >
-                Book Now
-              </Link>
-            </div>
-          ))}
+        {/* ── Walk Packs ── */}
+        <div className="mb-10">
+          <div className="flex items-center gap-3 mb-6">
+            <h3 className="font-heading text-xl font-bold text-dark-olive">
+              Walk Packs
+            </h3>
+            <span className="text-xs font-medium text-off-white bg-forest-green px-3 py-1 rounded-full">
+              Bundle & Save
+            </span>
+          </div>
+
+          {/* 30-Minute Packs */}
+          <p className="text-sm font-semibold text-muted-olive mb-3 uppercase tracking-wide">
+            30-Minute Walk Packs
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <PriceCard
+              title="5-Walk Pack"
+              price={`$${PRICING.dog_walking.packages["30_min_5"].price}`}
+              period="/5 walks"
+              description="30-minute walks"
+              badge={`Save $${PRICING.dog_walking.packages["30_min_5"].savings}`}
+              features={[
+                "5 x 30-minute walks",
+                `$${PRICING.dog_walking.packages["30_min_5"].price / 5} per walk (reg. $${PRICING.dog_walking.individual["30_min"].price})`,
+                "Use anytime — no expiration",
+                `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
+              ]}
+            />
+            <PriceCard
+              title="20-Walk Pack"
+              price={`$${PRICING.dog_walking.packages["30_min_20"].price}`}
+              period="/20 walks"
+              description="30-minute walks — best value"
+              badge={`Save $${PRICING.dog_walking.packages["30_min_20"].savings}`}
+              highlighted
+              features={[
+                "20 x 30-minute walks",
+                `$${PRICING.dog_walking.packages["30_min_20"].price / 20} per walk (reg. $${PRICING.dog_walking.individual["30_min"].price})`,
+                "Use anytime — no expiration",
+                `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
+              ]}
+            />
+          </div>
+
+          {/* 60-Minute Packs */}
+          <p className="text-sm font-semibold text-muted-olive mb-3 uppercase tracking-wide">
+            60-Minute Walk Packs
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <PriceCard
+              title="5-Walk Pack"
+              price={`$${PRICING.dog_walking.packages["60_min_5"].price}`}
+              period="/5 walks"
+              description="60-minute walks"
+              badge={`Save $${PRICING.dog_walking.packages["60_min_5"].savings}`}
+              features={[
+                "5 x 60-minute walks",
+                `$${PRICING.dog_walking.packages["60_min_5"].price / 5} per walk (reg. $${PRICING.dog_walking.individual["60_min"].price})`,
+                "Use anytime — no expiration",
+                `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
+              ]}
+            />
+            <PriceCard
+              title="20-Walk Pack"
+              price={`$${PRICING.dog_walking.packages["60_min_20"].price}`}
+              period="/20 walks"
+              description="60-minute walks — best value"
+              badge={`Save $${PRICING.dog_walking.packages["60_min_20"].savings}`}
+              highlighted
+              features={[
+                "20 x 60-minute walks",
+                `$${PRICING.dog_walking.packages["60_min_20"].price / 20} per walk (reg. $${PRICING.dog_walking.individual["60_min"].price})`,
+                "Use anytime — no expiration",
+                `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
+              ]}
+            />
+          </div>
         </div>
 
-        <p className="text-center text-sm text-muted-olive">
-          <strong>Multi-pet discount:</strong> $5 off per additional pet in the
-          same household.
+        <p className="text-center text-sm text-muted-olive mt-8">
+          <strong>Additional dogs:</strong> +${PRICING.dog_walking.additional_dog} per walk for each additional dog in the same household.
           <br />
           <em>*All pricing subject to change. Registration fee of ${PRICING.registration_fee} applies to new clients.</em>
         </p>

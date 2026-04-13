@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito, Fredoka } from "next/font/google";
+import { FloatingPhone } from "@/components/ui/floating-phone";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -36,7 +37,10 @@ export default function RootLayout({
       lang="en"
       className={`${nunito.variable} ${fredoka.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body">{children}</body>
+      <body className="min-h-full flex flex-col font-body">
+        {children}
+        <FloatingPhone />
+      </body>
     </html>
   );
 }
