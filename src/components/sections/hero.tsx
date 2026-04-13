@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { PawPrint, Heart, Star } from "lucide-react";
+import { PawPrint, Star } from "lucide-react";
 
 export function Hero() {
   return (
@@ -60,13 +59,6 @@ export function Hero() {
             <PawPrint className="h-5 w-5" />
             Get a Free Quote
           </a>
-          <Link
-            href="/#services"
-            className="btn-hover inline-flex items-center justify-center gap-2 bg-sage-green/20 text-dark-olive px-8 py-3.5 rounded-full text-base font-semibold border border-sage-green"
-          >
-            <Heart className="h-5 w-5" />
-            Our Services
-          </Link>
         </div>
       </div>
     </section>

@@ -29,7 +29,7 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-warm-cream/95 backdrop-blur-sm border-b border-sage-green/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28 md:h-36">
+        <div className="flex items-center justify-between h-32 md:h-36">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
@@ -37,7 +37,7 @@ export function Navbar() {
               alt="Apex Pet Care"
               width={600}
               height={200}
-              className="h-24 md:h-52 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-28 md:h-52 w-auto object-contain group-hover:scale-105 transition-transform"
               priority
             />
           </Link>
