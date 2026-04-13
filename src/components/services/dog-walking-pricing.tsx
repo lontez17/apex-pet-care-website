@@ -119,7 +119,7 @@ export function DogWalkingPricing() {
           <div className="inline-flex bg-off-white rounded-full p-1 border border-border-gray/30">
             <button
               onClick={() => setTab("individual")}
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer ${
+              className={`px-4 sm:px-6 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap ${
                 tab === "individual"
                   ? "bg-forest-green text-off-white shadow-sm"
                   : "text-muted-olive hover:text-dark-olive"
@@ -129,7 +129,7 @@ export function DogWalkingPricing() {
             </button>
             <button
               onClick={() => setTab("bundles")}
-              className={`relative px-6 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer shadow-[0_0_12px_rgba(245,189,0,0.4),0_0_24px_rgba(245,189,0,0.2)] ring-2 ring-amber-400/50 ${
+              className={`relative px-4 sm:px-6 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap shadow-[0_0_12px_rgba(245,189,0,0.4),0_0_24px_rgba(245,189,0,0.2)] ring-2 ring-amber-400/50 ${
                 tab === "bundles"
                   ? "bg-forest-green text-off-white"
                   : "text-muted-olive hover:text-dark-olive"

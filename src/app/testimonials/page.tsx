@@ -118,7 +118,7 @@ export default function TestimonialsPage() {
                 <div className="hidden md:block w-px h-20 bg-border-gray/40" />
 
                 {/* Stat columns */}
-                <div className="grid grid-cols-3 gap-6 text-center">
+                <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center">
                   <div>
                     <div className="flex items-center justify-center gap-1.5 mb-1">
                       <Award className="h-5 w-5 text-forest-green" />

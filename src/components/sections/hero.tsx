@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Image marquee */}
-      <div className="relative h-48 sm:h-64 md:h-80 overflow-hidden">
+      <div className="relative h-36 sm:h-56 md:h-80 overflow-hidden">
         <div className="flex animate-marquee">
           {[...Array(2)].map((_, setIdx) =>
             HERO_IMAGES.map((img, i) => (

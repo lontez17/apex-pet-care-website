@@ -25,7 +25,7 @@ export function RoverProfile() {
             {/* Info */}
             <div className="flex-1 text-center md:text-left">
               <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
-                <h2 className="font-heading text-xl md:text-2xl font-bold text-dark-olive whitespace-nowrap">
+                <h2 className="font-heading text-lg sm:text-xl md:text-2xl font-bold text-dark-olive">
                   Founder &amp; CEO Stephanie Winter
                 </h2>
                 <span className="inline-flex items-center gap-1 text-xs font-medium bg-green-500/15 text-green-600 px-2.5 py-1 rounded-full self-center md:self-auto">
