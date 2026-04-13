@@ -60,8 +60,8 @@ export async function POST(request: NextRequest) {
       metadata: {
         service: data.service,
         plan: data.plan,
-        emergencyContact: `${data.emergencyContactName} (${data.emergencyContactRelation}) — ${data.emergencyContactPhone}`,
-        vetInfo: data.vetName ? `${data.vetName}${data.vetPhone ? ` — ${data.vetPhone}` : ""}` : "",
+        emergencyContact: `${data.emergencyContactName} (${data.emergencyContactRelation}), ${data.emergencyContactPhone}`,
+        vetInfo: data.vetName ? `${data.vetName}${data.vetPhone ? `, ${data.vetPhone}` : ""}` : "",
         pets: data.pets.map((p) => `${p.petName} (${p.petType}, ${p.breed})`).join("; "),
       },
     });
@@ -120,7 +120,7 @@ export async function POST(request: NextRequest) {
         service: data.service,
         plan: data.plan,
         planLabel: data.planLabel,
-        emergencyContact: `${data.emergencyContactName} (${data.emergencyContactRelation}) — ${data.emergencyContactPhone}`,
+        emergencyContact: `${data.emergencyContactName} (${data.emergencyContactRelation}), ${data.emergencyContactPhone}`,
         vetInfo: data.vetName || "",
         pets: JSON.stringify(data.pets),
         subtotal: String(data.subtotal),

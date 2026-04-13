@@ -67,7 +67,7 @@ export default function AdminPacksPage() {
                 href={`/admin/packs/${p.id}`}
                 className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full hover:bg-red-200"
               >
-                {p.customer_name} — {p.remaining_sessions} left
+                {p.customer_name}, {p.remaining_sessions} left
               </Link>
             ))}
           </div>

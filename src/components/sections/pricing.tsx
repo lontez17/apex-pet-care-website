@@ -164,7 +164,7 @@ export function Pricing() {
               features={[
                 "5 x 30-minute walks",
                 `$${PRICING.dog_walking.packages["30_min_5"].price / 5} per walk (reg. $${PRICING.dog_walking.individual["30_min"].price})`,
-                "Use anytime — no expiration",
+                "Use anytime, no expiration",
                 `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
               ]}
             />
@@ -172,13 +172,13 @@ export function Pricing() {
               title="20-Walk Pack"
               price={`$${PRICING.dog_walking.packages["30_min_20"].price}`}
               period="/20 walks"
-              description="30-minute walks — best value"
+              description="30-minute walks, best value"
               badge={`Save $${PRICING.dog_walking.packages["30_min_20"].savings}`}
               highlighted
               features={[
                 "20 x 30-minute walks",
                 `$${PRICING.dog_walking.packages["30_min_20"].price / 20} per walk (reg. $${PRICING.dog_walking.individual["30_min"].price})`,
-                "Use anytime — no expiration",
+                "Use anytime, no expiration",
                 `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
               ]}
             />
@@ -198,7 +198,7 @@ export function Pricing() {
               features={[
                 "5 x 60-minute walks",
                 `$${PRICING.dog_walking.packages["60_min_5"].price / 5} per walk (reg. $${PRICING.dog_walking.individual["60_min"].price})`,
-                "Use anytime — no expiration",
+                "Use anytime, no expiration",
                 `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
               ]}
             />
@@ -206,13 +206,13 @@ export function Pricing() {
               title="20-Walk Pack"
               price={`$${PRICING.dog_walking.packages["60_min_20"].price}`}
               period="/20 walks"
-              description="60-minute walks — best value"
+              description="60-minute walks, best value"
               badge={`Save $${PRICING.dog_walking.packages["60_min_20"].savings}`}
               highlighted
               features={[
                 "20 x 60-minute walks",
                 `$${PRICING.dog_walking.packages["60_min_20"].price / 20} per walk (reg. $${PRICING.dog_walking.individual["60_min"].price})`,
-                "Use anytime — no expiration",
+                "Use anytime, no expiration",
                 `+$${PRICING.dog_walking.additional_dog}/walk per additional dog`,
               ]}
             />

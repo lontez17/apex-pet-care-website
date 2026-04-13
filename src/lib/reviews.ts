@@ -137,7 +137,7 @@ export const REVIEWS: Review[] = [
     name: "Kendra C.",
     date: "Oct 31",
     service: "Drop-In Visits",
-    text: "Stephanie was amazing with Oakley — he took a liking to her really quickly and I loved the detailed report cards. She was also communicative and quick to respond to messages. Would highly recommend!",
+    text: "Stephanie was amazing with Oakley, he took a liking to her really quickly and I loved the detailed report cards. She was also communicative and quick to respond to messages. Would highly recommend!",
     rating: 5,
   },
   {

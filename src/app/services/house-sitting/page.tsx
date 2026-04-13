@@ -13,7 +13,7 @@ export default function HouseSittingPage() {
       title="House Sitting"
       slug="house-sitting"
       tagline="Your Home, Their Routine"
-      description="The ultimate comfort for your pet while you're away. We move into your home so your pets stay in their own environment with their own beds, their own smells, and their own routine — just with a caring professional by their side."
+      description="The ultimate comfort for your pet while you're away. We move into your home so your pets stay in their own environment with their own beds, their own smells, and their own routine, just with a caring professional by their side."
       heroImage="/images/gray-cat.jpeg"
       icon={Home}
       features={[
@@ -25,7 +25,7 @@ export default function HouseSittingPage() {
         {
           icon: Heart,
           title: "Full Pet Care",
-          description: "Walking, feeding, playtime, medication, grooming maintenance — everything your pet needs, exactly as you'd do it yourself.",
+          description: "Walking, feeding, playtime, medication, grooming maintenance, everything your pet needs, exactly as you'd do it yourself.",
         },
         {
           icon: Home,
@@ -35,7 +35,7 @@ export default function HouseSittingPage() {
         {
           icon: Mail,
           title: "Mail & Package Collection",
-          description: "We bring in your mail, accept packages, and make sure your home looks lived-in while you're away — added security at no extra cost.",
+          description: "We bring in your mail, accept packages, and make sure your home looks lived-in while you're away, added security at no extra cost.",
         },
         {
           icon: Flower2,
@@ -51,7 +51,7 @@ export default function HouseSittingPage() {
       howItWorks={[
         { step: 1, title: "Consultation & Meet", description: "We visit your home, meet all your pets, walk through routines, learn the house systems (alarm, thermostat, etc.), and discuss your trip dates." },
         { step: 2, title: "Pre-Trip Prep", description: "You leave us keys, detailed care instructions, vet info, and emergency contacts. We confirm everything is clear before you depart." },
-        { step: 3, title: "We Move In", description: "Our sitter arrives before you leave (or shortly after). Your pets keep their exact routine — same walks, same feeding times, same couch spot." },
+        { step: 3, title: "We Move In", description: "Our sitter arrives before you leave (or shortly after). Your pets keep their exact routine, same walks, same feeding times, same couch spot." },
         { step: 4, title: "Daily Updates", description: "You receive daily photos, pet updates, and home status checks throughout your trip. We're always reachable by text or call." },
       ]}
       pricing={[
@@ -79,7 +79,7 @@ export default function HouseSittingPage() {
         },
       ]}
       whyChooseUs={[
-        "Your pets stay in their own home — zero stress from new environments",
+        "Your pets stay in their own home, zero stress from new environments",
         "Full house care included: mail, plants, trash, lights",
         "All species cared for under one roof",
         "Experienced sitters who are background-checked and insured",
@@ -92,8 +92,8 @@ export default function HouseSittingPage() {
         { question: "Can you handle multiple species?", answer: "Absolutely. We've cared for households with dogs, cats, birds, fish, reptiles, and small animals all at once. Each pet gets individualized care based on their species and needs." },
         { question: "Will you use my car or personal items?", answer: "No. Our sitters bring their own essentials and respect your personal space. We'll only access areas relevant to pet care and home maintenance tasks we've agreed on." },
         { question: "What about my home alarm system?", answer: "We'll do a walkthrough of your alarm, thermostat, smart home systems, and any other tech before you leave. We're comfortable with Ring, SimpliSafe, Nest, and most common systems." },
-        { question: "What if there's a home emergency?", answer: "We're prepared for basics — we'll know where your shutoff valves and breaker box are. For anything beyond our scope, we'll contact you and your designated emergency contacts immediately." },
-        { question: "How far in advance should I book?", answer: "We recommend 2-3 weeks in advance, especially for holidays and summer travel season. Last-minute availability may be possible — just ask!" },
+        { question: "What if there's a home emergency?", answer: "We're prepared for basics, we'll know where your shutoff valves and breaker box are. For anything beyond our scope, we'll contact you and your designated emergency contacts immediately." },
+        { question: "How far in advance should I book?", answer: "We recommend 2-3 weeks in advance, especially for holidays and summer travel season. Last-minute availability may be possible, just ask!" },
       ]}
     />
   );

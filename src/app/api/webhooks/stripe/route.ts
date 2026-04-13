@@ -152,7 +152,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
     await getResend().emails.send({
       from: "Apex Pet Care <noreply@apexpetcare.com>",
       to: meta.email,
-      subject: "Booking Confirmed — Apex Pet Care",
+      subject: "Booking Confirmed, Apex Pet Care",
       html: `
         <h1>Welcome to Apex Pet Care!</h1>
         <p>Hi ${ownerName},</p>
@@ -166,7 +166,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
         </ul>
         <p>We'll be in touch before your start date to schedule the meet & greet.</p>
         <p>Thank you for trusting us with ${petName}!</p>
-        <p>— The Apex Pet Care Team</p>
+        <p>- The Apex Pet Care Team</p>
       `,
     });
   }

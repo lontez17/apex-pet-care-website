@@ -13,7 +13,7 @@ export default function TransportationPage() {
       title="Transportation"
       slug="transportation"
       tagline="Safe Rides for Your Pet"
-      description="Can't make the vet appointment? Need daycare pickup? Our pet transportation service provides safe, comfortable rides for your pet in a climate-controlled vehicle with a trained handler — so you don't have to rearrange your day."
+      description="Can't make the vet appointment? Need daycare pickup? Our pet transportation service provides safe, comfortable rides for your pet in a climate-controlled vehicle with a trained handler, so you don't have to rearrange your day."
       heroImage="/images/apricot-poodle-walk.jpeg"
       icon={Car}
       features={[
@@ -30,12 +30,12 @@ export default function TransportationPage() {
         {
           icon: Clock,
           title: "Flexible Scheduling",
-          description: "Morning vet visits, afternoon grooming, daycare commutes — we work around your pet's appointments and your schedule.",
+          description: "Morning vet visits, afternoon grooming, daycare commutes, we work around your pet's appointments and your schedule.",
         },
         {
           icon: MapPin,
           title: "Door-to-Door Service",
-          description: "We pick up from your home and deliver directly to the destination. No transfers, no strangers — just one trusted handler the entire trip.",
+          description: "We pick up from your home and deliver directly to the destination. No transfers, no strangers, just one trusted handler the entire trip.",
         },
         {
           icon: Heart,
@@ -45,7 +45,7 @@ export default function TransportationPage() {
         {
           icon: Thermometer,
           title: "Wait & Return Service",
-          description: "We can wait at the vet or groomer and bring your pet home after — a round-trip service so you don't have to coordinate two pickups.",
+          description: "We can wait at the vet or groomer and bring your pet home after, a round-trip service so you don't have to coordinate two pickups.",
         },
       ]}
       howItWorks={[
@@ -79,7 +79,7 @@ export default function TransportationPage() {
         },
       ]}
       whyChooseUs={[
-        "Dedicated pet transport vehicle — not a personal car",
+        "Dedicated pet transport vehicle, not a personal car",
         "Climate-controlled with secure crate anchoring",
         "Trained handlers experienced with anxious travelers",
         "Never leave a pet unattended in the vehicle",

@@ -44,7 +44,7 @@ export const useBookingStore = create<BookingStore>((set) => ({
 }));
 
 // California sales tax rates by zip code prefix (Orange County area)
-// Source: California CDTFA — base rate 7.25% + district taxes
+// Source: California CDTFA, base rate 7.25% + district taxes
 const TAX_RATES: Record<string, number> = {
   "926": 0.0775, // most of Orange County
   "927": 0.0775,

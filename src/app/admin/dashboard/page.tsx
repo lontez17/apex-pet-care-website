@@ -156,7 +156,7 @@ export default function AdminDashboardPage() {
                   <div key={log.id} className="flex items-center justify-between py-2 border-b border-border-gray/20 last:border-0">
                     <div>
                       <p className="text-sm text-dark-olive">
-                        {log.pet_name} — {log.service_type.replace("_", " ")}
+                        {log.pet_name}, {log.service_type.replace("_", " ")}
                       </p>
                       <p className="text-xs text-muted-olive">
                         {formatDate(log.service_date)}{log.walker_name ? ` \u00B7 ${log.walker_name}` : ""}

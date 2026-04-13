@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
           price_data: {
             currency: "usd",
             product_data: {
-              name: `${careLabel} — Monthly`,
+              name: `${careLabel}, Monthly`,
               description: `${data.serviceSelection.daysPerWeek}x/week for ${data.petInfo.petName}`,
             },
             unit_amount: Math.round(data.monthlyRate * 100),

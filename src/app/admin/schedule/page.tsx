@@ -85,7 +85,7 @@ export default function AdminSchedulePage() {
         </button>
         <div className="text-center">
           <p className="font-heading text-lg font-bold text-dark-olive">
-            {view === "day" ? format(currentDate, "EEEE, MMMM d, yyyy") : `${format(weekDays[0], "MMM d")} — ${format(weekDays[6], "MMM d, yyyy")}`}
+            {view === "day" ? format(currentDate, "EEEE, MMMM d, yyyy") : `${format(weekDays[0], "MMM d")}, ${format(weekDays[6], "MMM d, yyyy")}`}
           </p>
           <button
             onClick={() => setCurrentDate(new Date())}
@@ -117,7 +117,7 @@ export default function AdminSchedulePage() {
                 </div>
                 <div className="space-y-1.5 min-h-[60px]">
                   {dayLogs.length === 0 ? (
-                    <p className="text-xs text-muted-olive text-center py-2">—</p>
+                    <p className="text-xs text-muted-olive text-center py-2">-</p>
                   ) : (
                     dayLogs.map((log) => (
                       <div key={log.id} className={`card bg-off-white p-2 text-xs ${log.status === "completed" ? "opacity-60" : ""}`}>

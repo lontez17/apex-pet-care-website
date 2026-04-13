@@ -2,16 +2,16 @@
 
 @theme inline {
   /* === Color Palette (matched to logo) === */
-  --color-dark-olive: #2D3250;       /* slate navy — primary text */
-  --color-sage-green: #A8B4D4;       /* periwinkle muted — soft accent */
-  --color-light-sage: #E8ECF4;       /* light periwinkle — nav/section bg */
-  --color-warm-cream: #FFF1E8;       /* warm cream — exact logo background */
-  --color-gold: #E8C4C0;             /* blush pink — warm accent */
-  --color-off-white: #FDFAF7;        /* soft cream-white — card bg */
-  --color-muted-olive: #6B7194;      /* muted slate — secondary text */
-  --color-forest-green: #4A5B8C;     /* periwinkle navy — primary CTA */
-  --color-dark-charcoal: #1E2240;    /* deep navy — footer bg */
-  --color-border-gray: #D1CBBD;      /* warm gray — borders */
+  --color-dark-olive: #2D3250;       /* slate navy, primary text */
+  --color-sage-green: #A8B4D4;       /* periwinkle muted, soft accent */
+  --color-light-sage: #E8ECF4;       /* light periwinkle, nav/section bg */
+  --color-warm-cream: #FFF1E8;       /* warm cream, exact logo background */
+  --color-gold: #E8C4C0;             /* blush pink, warm accent */
+  --color-off-white: #FDFAF7;        /* soft cream-white, card bg */
+  --color-muted-olive: #6B7194;      /* muted slate, secondary text */
+  --color-forest-green: #4A5B8C;     /* periwinkle navy, primary CTA */
+  --color-dark-charcoal: #1E2240;    /* deep navy, footer bg */
+  --color-border-gray: #D1CBBD;      /* warm gray, borders */
 
   /* === Font families === */
   --font-heading: var(--font-fredoka);

@@ -19,7 +19,7 @@ export default function GetQuotePage() {
           </h1>
           <p className="mt-3 text-muted-olive max-w-lg mx-auto">
             Tell us about your pet and choose a service. We&apos;ll show you
-            transparent pricing — no surprises.
+            transparent pricing, no surprises.
           </p>
         </div>
         <QuoteCalculator />

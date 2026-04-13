@@ -146,7 +146,7 @@ export default function CustomerDetailPage() {
                   <div key={b.id} className="card bg-off-white p-4 flex items-center justify-between">
                     <div>
                       <p className="text-sm font-medium text-dark-olive">
-                        {SERVICE_LABELS[b.care_type] || b.care_type} — {b.pet_name}
+                        {SERVICE_LABELS[b.care_type] || b.care_type}, {b.pet_name}
                       </p>
                       <p className="text-xs text-muted-olive">
                         {formatDate(b.start_date)} &middot; {formatCurrency(b.monthly_rate)}/mo
@@ -169,7 +169,7 @@ export default function CustomerDetailPage() {
                   <div key={log.id} className="card bg-off-white p-3 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-dark-olive">
-                        {formatDate(log.service_date)} — {log.pet_name}
+                        {formatDate(log.service_date)}, {log.pet_name}
                       </p>
                       <p className="text-xs text-muted-olive">
                         {log.service_type.replace("_", " ")}{log.walker_name ? ` \u00B7 ${log.walker_name}` : ""}

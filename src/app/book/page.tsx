@@ -116,7 +116,7 @@ function BookingFormInner() {
         <div className="inline-flex items-center gap-2 bg-forest-green/10 text-forest-green text-sm font-medium px-4 py-1.5 rounded-full mb-4">
           <PawPrint className="h-4 w-4" />
           {serviceLabels[service] || "Pet Care"}
-          {plan && <span className="text-muted-olive">— {plan}</span>}
+          {plan && <span className="text-muted-olive">- {plan}</span>}
         </div>
         <h1 className="font-heading text-3xl md:text-4xl font-bold text-dark-olive mb-2">
           Book Your Service

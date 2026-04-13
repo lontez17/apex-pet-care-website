@@ -13,7 +13,7 @@ export default function DropInVisitsPage() {
       title="Drop-In Visits"
       slug="drop-in-visits"
       tagline="Quick Care When You Need It"
-      description="Life gets busy. Our drop-in visits give your pet the attention they need — feeding, potty breaks, medication, and a little love — even when you can't be there. Perfect for long work days or quick errands."
+      description="Life gets busy. Our drop-in visits give your pet the attention they need, feeding, potty breaks, medication, and a little love, even when you can't be there. Perfect for long work days or quick errands."
       heroImage="/images/orange-tabby-cat.jpeg"
       icon={Clock}
       features={[
@@ -25,12 +25,12 @@ export default function DropInVisitsPage() {
         {
           icon: Heart,
           title: "Feeding & Fresh Water",
-          description: "Meals served on schedule with fresh water. We follow your exact feeding instructions — portions, supplements, and all.",
+          description: "Meals served on schedule with fresh water. We follow your exact feeding instructions, portions, supplements, and all.",
         },
         {
           icon: Pill,
           title: "Medication Administration",
-          description: "Oral meds, eye drops, insulin shots — our trained sitters handle it all with care and on the schedule your vet requires.",
+          description: "Oral meds, eye drops, insulin shots, our trained sitters handle it all with care and on the schedule your vet requires.",
         },
         {
           icon: Clock,
@@ -49,7 +49,7 @@ export default function DropInVisitsPage() {
         },
       ]}
       howItWorks={[
-        { step: 1, title: "Tell Us Your Needs", description: "Share your schedule, your pet's routine, and any special requirements — feeding times, medications, favorite toys." },
+        { step: 1, title: "Tell Us Your Needs", description: "Share your schedule, your pet's routine, and any special requirements, feeding times, medications, favorite toys." },
         { step: 2, title: "Meet & Greet", description: "We visit your home to meet your pet, find the treats, learn the quirks, and make sure everyone's comfortable." },
         { step: 3, title: "We Drop In", description: "At the scheduled time, we arrive, complete all care tasks, give your pet some love, and lock up securely behind us." },
         { step: 4, title: "Get Your Update", description: "Within minutes of leaving, you'll get a photo, visit summary, and any notes about how your pet did." },
@@ -81,12 +81,12 @@ export default function DropInVisitsPage() {
       whyChooseUs={[
         "Perfect for work-from-office days or long shifts",
         "Trained in medication administration including injections",
-        "All species welcome — dogs, cats, birds, reptiles, small animals",
+        "All species welcome, dogs, cats, birds, reptiles, small animals",
         "Consistent sitter so your pet recognizes a friendly face",
         "Fully insured and bonded for your peace of mind",
-        "Flexible scheduling — one-time or recurring visits",
+        "Flexible scheduling, one-time or recurring visits",
         "We handle multi-pet households with ease",
-        "Lockbox or smart lock access — you don't need to be home",
+        "Lockbox or smart lock access, you don't need to be home",
       ]}
       faqs={[
         { question: "Can you care for cats and other animals too?", answer: "Absolutely! Drop-in visits are perfect for cats, birds, reptiles, fish, rabbits, and any pet that needs feeding and attention. We tailor the visit to each species' needs." },

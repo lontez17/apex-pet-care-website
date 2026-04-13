@@ -13,7 +13,7 @@ export default function DaycarePage() {
       title="Daycare"
       slug="daycare"
       tagline="Structured Play & Socialization"
-      description="No more guilt about leaving your pup home alone all day. Our daycare program provides structured play sessions, mental enrichment, and proper rest breaks — so your dog comes home happy, socialized, and ready to relax."
+      description="No more guilt about leaving your pup home alone all day. Our daycare program provides structured play sessions, mental enrichment, and proper rest breaks, so your dog comes home happy, socialized, and ready to relax."
       heroImage="/images/happy-pitbull.jpeg"
       icon={Sun}
       features={[
@@ -30,7 +30,7 @@ export default function DaycarePage() {
         {
           icon: Bed,
           title: "Structured Rest Breaks",
-          description: "We balance play with quiet rest time. Downtime prevents overstimulation and teaches dogs to self-settle — a skill they carry home.",
+          description: "We balance play with quiet rest time. Downtime prevents overstimulation and teaches dogs to self-settle, a skill they carry home.",
         },
         {
           icon: Clock,
@@ -85,7 +85,7 @@ export default function DaycarePage() {
         "Indoor climate-controlled space plus outdoor play",
         "Trained staff certified in pet first aid and behavior",
         "Daily report cards with photos and behavior notes",
-        "Flexible scheduling — use package days anytime",
+        "Flexible scheduling, use package days anytime",
         "Discounts for multi-dog households",
       ]}
       faqs={[

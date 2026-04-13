@@ -129,7 +129,7 @@ export default function AdminServiceLogPage() {
                 <option value="">Choose a pack...</option>
                 {packs.map((p) => (
                   <option key={p.id} value={p.id}>
-                    {p.customer_name} — {p.pack_label} ({p.remaining_sessions} left)
+                    {p.customer_name}, {p.pack_label} ({p.remaining_sessions} left)
                   </option>
                 ))}
               </select>
@@ -190,7 +190,7 @@ export default function AdminServiceLogPage() {
           {selectedPack && (
             <div className="bg-sage-green/10 rounded-lg p-3 text-sm">
               <span className="font-medium text-dark-olive">{selectedPack.pack_label}</span>
-              <span className="text-muted-olive"> — </span>
+              <span className="text-muted-olive">, </span>
               <span className="font-bold text-forest-green">{selectedPack.remaining_sessions}</span>
               <span className="text-muted-olive"> sessions remaining</span>
               {selectedPack.unit_duration_minutes && (
@@ -251,8 +251,8 @@ export default function AdminServiceLogPage() {
                   <td className="p-4 text-dark-olive">{formatDate(log.service_date)}</td>
                   <td className="p-4 font-medium text-dark-olive">{log.pet_name}</td>
                   <td className="p-4 text-dark-olive capitalize">{log.service_type.replace("_", " ")}</td>
-                  <td className="p-4 text-muted-olive">{log.duration_minutes ? `${log.duration_minutes} min` : "—"}</td>
-                  <td className="p-4 text-muted-olive">{log.walker_name || "—"}</td>
+                  <td className="p-4 text-muted-olive">{log.duration_minutes ? `${log.duration_minutes} min` : "-"}</td>
+                  <td className="p-4 text-muted-olive">{log.walker_name || "-"}</td>
                   <td className="p-4">
                     <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${LOG_STATUS_COLORS[log.status] || ""}`}>
                       {log.status}

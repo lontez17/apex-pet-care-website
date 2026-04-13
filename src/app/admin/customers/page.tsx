@@ -104,7 +104,7 @@ export default function AdminCustomersPage() {
                     <p className="font-medium text-dark-olive">{c.full_name}</p>
                     <p className="text-xs text-muted-olive">{c.email}</p>
                   </td>
-                  <td className="p-4 text-muted-olive">{c.phone || "—"}</td>
+                  <td className="p-4 text-muted-olive">{c.phone || "-"}</td>
                   <td className="p-4 text-dark-olive">{c.pet_count}</td>
                   <td className="p-4 text-dark-olive">{c.booking_count}</td>
                   <td className="p-4">

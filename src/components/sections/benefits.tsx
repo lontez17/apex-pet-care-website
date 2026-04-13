@@ -48,7 +48,7 @@ export function Benefits() {
             The Apex Pet Care Difference
           </h2>
           <p className="mt-3 text-muted-olive max-w-2xl mx-auto">
-            We don&apos;t just care for pets — we provide the structure and
+            We don&apos;t just care for pets, we provide the structure and
             attention they need to truly thrive.
           </p>
         </div>

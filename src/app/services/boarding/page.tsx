@@ -13,7 +13,7 @@ export default function BoardingPage() {
       title="Boarding"
       slug="boarding"
       tagline="A Home Away From Home"
-      description="Going on vacation? Business trip? Your pet deserves more than a kennel. Our boarding provides a comfortable, supervised environment with structured play, socialization, and plenty of love — so you can travel worry-free."
+      description="Going on vacation? Business trip? Your pet deserves more than a kennel. Our boarding provides a comfortable, supervised environment with structured play, socialization, and plenty of love, so you can travel worry-free."
       heroImage="/images/cozy-dog-blanket.jpeg"
       icon={Building}
       features={[
@@ -25,7 +25,7 @@ export default function BoardingPage() {
         {
           icon: Sun,
           title: "Structured Daily Schedule",
-          description: "Morning potty breaks, breakfast, play sessions, afternoon rest, evening walks, and dinner — a full day that mirrors home life.",
+          description: "Morning potty breaks, breakfast, play sessions, afternoon rest, evening walks, and dinner, a full day that mirrors home life.",
         },
         {
           icon: Users,
@@ -45,7 +45,7 @@ export default function BoardingPage() {
         {
           icon: Building,
           title: "Medication & Special Diets",
-          description: "We follow your vet's instructions precisely — medications on schedule, special diets prepared exactly as directed.",
+          description: "We follow your vet's instructions precisely, medications on schedule, special diets prepared exactly as directed.",
         },
       ]}
       howItWorks={[
@@ -79,10 +79,10 @@ export default function BoardingPage() {
         },
       ]}
       whyChooseUs={[
-        "No cages or kennels — real living spaces with room to play",
+        "No cages or kennels, real living spaces with room to play",
         "24/7 on-site supervision by trained caregivers",
         "Small group sizes for personalized attention",
-        "Your pet keeps their routine — same meals, same bedtime",
+        "Your pet keeps their routine, same meals, same bedtime",
         "Fully insured and bonded with vet on call",
         "Medication administration at no extra charge",
         "Extended stay discounts for longer trips",
@@ -93,7 +93,7 @@ export default function BoardingPage() {
         { question: "Is there a vet on call?", answer: "Yes. We have a relationship with a local veterinarian who can be reached 24/7 for emergencies. We'll also contact you immediately if anything comes up." },
         { question: "Can my dog play with other dogs?", answer: "If your dog is social and passes our temperament assessment, they'll enjoy supervised playgroups with compatible dogs. Dogs that prefer solo time get dedicated one-on-one attention." },
         { question: "What vaccinations are required?", answer: "All boarding guests must be current on Rabies, DHPP, and Bordetella. We also require a negative fecal test within the past year and flea/tick prevention." },
-        { question: "What about holidays?", answer: "We're open 365 days a year including holidays. Holiday stays may have a small surcharge — we'll let you know when you book." },
+        { question: "What about holidays?", answer: "We're open 365 days a year including holidays. Holiday stays may have a small surcharge, we'll let you know when you book." },
       ]}
     />
   );

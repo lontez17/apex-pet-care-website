@@ -199,7 +199,7 @@ export function DogWalkingPricing() {
                   features={[
                     "5 x 30-minute walks",
                     "$30 per walk (reg. $35)",
-                    "Use anytime — no expiration",
+                    "Use anytime, no expiration",
                     "+$10/walk per additional dog",
                   ]}
                 />
@@ -207,14 +207,14 @@ export function DogWalkingPricing() {
                   title="20-Walk Pack"
                   price="$600"
                   period="/20 walks"
-                  description="30-minute walks — best value"
+                  description="30-minute walks, best value"
                   badge="Save $100"
                   highlighted
                   bookUrl="/book?service=dog-walking&plan=20-Walk Pack (30 min)"
                   features={[
                     "20 x 30-minute walks",
                     "$30 per walk (reg. $35)",
-                    "Use anytime — no expiration",
+                    "Use anytime, no expiration",
                     "+$10/walk per additional dog",
                   ]}
                 />
@@ -231,7 +231,7 @@ export function DogWalkingPricing() {
                   features={[
                     "5 x 60-minute walks",
                     "$50 per walk (reg. $55)",
-                    "Use anytime — no expiration",
+                    "Use anytime, no expiration",
                     "+$10/walk per additional dog",
                   ]}
                 />
@@ -239,14 +239,14 @@ export function DogWalkingPricing() {
                   title="20-Walk Pack"
                   price="$1,000"
                   period="/20 walks"
-                  description="60-minute walks — best value"
+                  description="60-minute walks, best value"
                   badge="Save $100"
                   highlighted
                   bookUrl="/book?service=dog-walking&plan=20-Walk Pack (60 min)"
                   features={[
                     "20 x 60-minute walks",
                     "$50 per walk (reg. $55)",
-                    "Use anytime — no expiration",
+                    "Use anytime, no expiration",
                     "+$10/walk per additional dog",
                   ]}
                 />

@@ -49,7 +49,7 @@ export function Hero() {
         </h1>
         <p className="mt-4 text-lg text-muted-olive max-w-2xl mx-auto">
           Professional pet sitting and dog walking services tailored to your
-          pet&apos;s unique needs. Trusted, reliable, and loving care — right in
+          pet&apos;s unique needs. Trusted, reliable, and loving care, right in
           your neighborhood.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

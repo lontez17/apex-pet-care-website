@@ -162,7 +162,7 @@ export default function BookingSummaryPage() {
                   <>
                     <span className="text-muted-olive">Veterinarian</span>
                     <span className="text-dark-olive font-medium">
-                      {data.vetName}{data.vetPhone ? ` — ${data.vetPhone}` : ""}
+                      {data.vetName}{data.vetPhone ? `, ${data.vetPhone}` : ""}
                     </span>
                   </>
                 )}
@@ -215,7 +215,7 @@ export default function BookingSummaryPage() {
               </div>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-off-white/80">{serviceLabel} — {planLabel}</span>
+                  <span className="text-off-white/80">{serviceLabel}, {planLabel}</span>
                   <span className="font-semibold">${unitPrice.toFixed(2)}</span>
                 </div>
                 {additionalDogs > 0 && (
@@ -233,7 +233,7 @@ export default function BookingSummaryPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-off-white/80">
-                    Sales Tax ({(taxRate * 100).toFixed(2)}% — {data.city}, {data.state} {data.zip})
+                    Sales Tax ({(taxRate * 100).toFixed(2)}%, {data.city}, {data.state} {data.zip})
                   </span>
                   <span className="font-semibold">${taxAmount.toFixed(2)}</span>
                 </div>
